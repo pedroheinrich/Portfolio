@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedro Heinrich Portfolio</title>
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo"><span>MyDev</span>Portfolio</a>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        
+      </nav>
+
+
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me!</h3>
+        <h1>Pedro Heinrich</h1>
+        <h3>&  I'm a <span class="multiple-text"></span></h3>
+        <p>Lorem ipsum dolor  sit amet, consectetur adipisicing elit. 
+          Itaque sunt simil</p>
+          
+        <div class="social-media">
+          
+          <a href="https://www.linkedin.com/in/pedroantonioheinrich/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/pedroheinrich" target="_blank"><i class='bx bxl-github' ></i></a>
+          <a href="https://instagram.com/streetegist" target="_blank"><i class='bx bxl-instagram' ></i></a>
+          
+        </div>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="images/home.png">
+
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/about.png" alt="">
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About<span>Me</span></h2>
+        <h3>Frontend Developer!</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, eveniet reiciendis ullam ipsam atque nemo. Pariatur recusandae, eos nisi tempora architecto sint esse, reprehenderit alias possimus consectetur optio dignissimos odit quas ipsa animi? Ut qui voluptatibus optio accusamus illo deleniti beatae, obcaecati ad! Quia, temporibus molestias?</p>
+      <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- Relogio digital section design -->
+
+    <section class="relogio-box">
+      <div class="relogio">
+        <div class="relogio">    
+          <span id="horas">00</span>
+          <span class="tempo">Horas</span>
+      </div>
+  
+  
+      <div class="relogio">
+          <span id="minutos">00</span>
+          <span class="tempo">Minutos</span>
+      </div>
+  
+      <div class="relogio">
+          <span id="segundos">00</span>
+          <span class="tempo">Segundos</span>
+      </div>
+     <script>const horas = document.getElementById('horas');
+      const minutos = document.getElementById('minutos');
+      const segundos = document.getElementById('segundos');
+      
+      const relogio = setInterval(function time(){
+          let dateToday = new Date();
+          let hr = dateToday.getHours();
+          let min = dateToday.getMinutes();
+          let s = dateToday.getSeconds();
+      
+          if (hr < 10) hr = '0' + hr;
+          if (min < 10) min = '0' + min;
+          if (s < 10) s = '0' + s;
+      
+          horas.textContent =  hr;
+          minutos.textContent = min;
+          segundos.textContent = s;
+      
+      
+      })
+      </script>
+      </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="skills" id="skills">
+      <h2 class="heading">My<span> Skills</span></h2>
+      <div class="skills-container">
+
+        <div class="skills-box">
+          <i class='bx bxl-javascript'></i>
+          <h3>JavaScript</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quo voluptatibus optio id dignissimos? Autem molestiae odit porro necessitatibus nam.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="skills-box">
+          <i class='bx bxl-html5' ></i>
+          <h3>HTML</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quo voluptatibus optio id dignissimos? Autem molestiae odit porro necessitatibus nam.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="skills-box">
+          <i class='bx bxl-css3' ></i>
+          <h3>CSS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quo voluptatibus optio id dignissimos? Autem molestiae odit porro necessitatibus nam.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
+      <div class="portfolio-container">
+        
+        <div class="portfolio-box">
+          <img src="images/portfolio1.jpg">
+          <div class="portfolio-layer">
+            <h4>BMI Calculator</h4>
+            <p>Access the code</p>
+            <a href="https://github.com/pedroheinrich/BMI-Calculator" target="_blank"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio2.jpg">
+          <div class="portfolio-layer">
+            <h4>Password Generator</h4>
+            <p>Access the code</p>
+            <a href="https://github.com/pedroheinrich/Password-Generator2" target="_blank"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio3.jpg">
+          <div class="portfolio-layer">
+            <h4>Digital Watch</h4>
+            <p>Access the code</p>
+            <a href="https://github.com/pedroheinrich/Digital-Watch" target="_blank"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio4.jpg">
+          <div class="portfolio-layer">
+            <h4>Login Page</h4>
+            <p>Access the code</p>
+            <a href="https://github.com/pedroheinrich/Dark-Login" target="_blank"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio5.jpg">
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Access the code</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio6.jpg">
+          <div class="portfolio-layer">
+            <h4>QR Code Generator</h4>
+            <p>Access the code</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- contact section design -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact<span>Me!</span></h2>
+      <form action="#" id="">
+
+        <div class="input-box">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email Address">
+        </div>
+
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number">
+          <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" cols="30" rows="10" placeholder="Your Message Here!"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+
+      </form>
+    </section>
+
+    <!-- footer design -->
+
+    
+    <footer class="footer">
+      <div class="footer-text">
+        <p> Copyright &copy; 2023 by Pedro Heinrich | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+      </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
